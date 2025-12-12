@@ -1,11 +1,24 @@
 {
   "name": "sv-modular",
   "version": "1.0.0",
+
+  "description": "CLI Generator for SvelteKit Modular Architecture",
+  "license": "MIT",
+  "author": "firzaelbuho",
+
   "module": "dist/cli.js",
   "type": "module",
   "bin": {
     "sv-modular": "./dist/cli.js"
   },
+
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+
   "scripts": {
     "build": "bun build ./src/cli.ts --outfile ./dist/cli.js --target node",
     "dev": "bun run src/cli.ts",
