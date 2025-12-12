@@ -1,0 +1,25 @@
+{
+  "name": "sv-modular",
+  "version": "1.0.0",
+  "module": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "sv-modular": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "bun build ./src/cli.ts --outfile ./dist/cli.js --target node",
+    "dev": "bun run src/cli.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "picocolors": "^1.0.0"
+  }
+}
